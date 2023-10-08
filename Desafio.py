@@ -13,7 +13,6 @@ def menu():
     return input(menu)
 
 def realizar_saque( *, saldo, valor, extrato, limite, numero_saques, limite_saques ):
-    print("saque!!!")
     excedeu_saldo = valor > saldo
     excedeu_limite = valor > limite
     excedeu_saques = numero_saques >= limite_saques
@@ -38,7 +37,6 @@ def realizar_saque( *, saldo, valor, extrato, limite, numero_saques, limite_saqu
     return saldo, extrato, numero_saques
 
 def realizar_deposito( saldo, valor, extrato, / ):
-    print("deposito!!!")
     if valor > 0:
         saldo += valor
         extrato += f"Depósito: R$ {valor:.2f}\n"
